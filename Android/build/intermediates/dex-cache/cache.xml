@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/dokinkon/Case/siegfried-core/Android/sample/build/intermediates/exploded-aar/Android/core/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="828c4ecec7e414f7ba8a1ebd29e66ab22f96758e">
+        <dex dex="/Users/dokinkon/Case/siegfried-core/Android/sample/build/intermediates/pre-dexed/debug/classes-14d4ba4772ec3f4f1de436e03be1942403f54150.jar" />
+    </item>
+    <item
+        jar="/Users/dokinkon/Case/siegfried-core/Android/sample/build/intermediates/exploded-aar/Android/core/unspecified/libs/android-query-full.0.26.8.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="5ab405d9f4eaf5ddd615967cd35650657b758d40">
+        <dex dex="/Users/dokinkon/Case/siegfried-core/Android/sample/build/intermediates/pre-dexed/debug/android-query-full.0.26.8-9739d41b52e1fab79d2623829023a7420d2711f9.jar" />
+    </item>
+
+</items>

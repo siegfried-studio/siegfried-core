@@ -10,6 +10,10 @@ public class APIError {
 
     private int _errorCode;
 
+    public int getErrorCode() {
+        return _errorCode;
+    }
+
     public static APIError fromErrorCode(int errorCode) {
         APIError error = new APIError();
         error._errorCode = errorCode;

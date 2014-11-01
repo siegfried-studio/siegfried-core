@@ -12,9 +12,9 @@ import java.util.Map;
  */
 public class ServiceManager {
     private static final String TAG = "ServiceManager";
-
-    private static final String API_SIGNUP = "/api/accounts/signup";
-    private static final String API_SIGNIN = "/api/accounts/signin";
+    private static final String HOST = "http://private-cf6fc-siegfried.apiary-mock.com";
+    private static final String API_SIGNUP = HOST + "/users/signup";
+    private static final String API_SIGNIN = HOST + "/users/signin";
 
     private static final String FK_ACCOUNT = "account";
     private static final String FK_PASSWORD = "password";
@@ -27,7 +27,7 @@ public class ServiceManager {
         return _instance;
     }
 
-    public boolean signup(AQuery aq, String account, String password, APIHandler handler) {
+    public boolean signUp(AQuery aq, String account, String password, APIHandler handler) {
         JSONObject json = new JSONObject();
         try {
             json.put(FK_ACCOUNT, account);
