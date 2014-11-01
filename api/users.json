@@ -1,4 +1,4 @@
-uri:          /accounts/signup
+uri:          /users/signup
 method:       POST
 description:  register a new accounts
 {
@@ -13,7 +13,7 @@ description:  register a new accounts
 }
 
 
-uri:          /accounts/signin
+uri:          /users/signin
 method:       POST
 description:  signin with an exist account.
 {
