@@ -1,0 +1,22 @@
+uri:          /users/signup
+method:       POST
+description:  register a new accounts
+{
+  "acount"    : "jobs@siegfried.com",
+  "password" : "aefef11wffwxwed",
+  "meta" : {
+    //some user metadata
+    "name" : "jack",
+    "email" : "jobs@siegfried.com",
+    "birthday" : "2/24/1955"
+  }
+}
+
+
+uri:          /users/signin
+method:       POST
+description:  signin with an exist account.
+{
+  "acount"    : "jobs@siegfried.com",
+  "password" : "aefef11wffwxwed",
+}
