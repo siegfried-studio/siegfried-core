@@ -2,7 +2,7 @@ uri:          accounts
 method:       POST
 description:  register a new accounts
 {
-  "email"    : "jack@siegfried.com",
+  "acount"    : "jack@siegfried.com",
   "password" : "aefef11wffwxwed",
   "meta" : {
     //some user metadata
