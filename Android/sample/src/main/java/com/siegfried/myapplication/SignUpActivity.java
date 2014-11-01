@@ -1,6 +1,7 @@
 package com.siegfried.myapplication;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,18 +32,41 @@ public class SignUpActivity extends Activity {
                 signUp();
             }
         });
+    }
+
+    private boolean verifyFields() {
+        String account = aq.id(R.id.edit_account).getEditText().toString();
+
+        if (account.isEmpty()) {
+            Toast.makeText(this, "Please Enter Account.", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        String password = aq.id(R.id.edit_password).getEditText().toString();
+        if (password.isEmpty()) {
+            Toast.makeText(this, "Please Enter Password.", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        String confirmPassword = aq.id(R.id.edit_confirm_password).getEditText().toString();
+        if (password.isEmpty()) {
+            Toast.makeText(this, "Please Enter Confirm Password.", Toast.LENGTH_SHORT).show();
+            return false;
+        }
 
 
+        return true;
     }
 
     private void signUp() {
         String account = aq.id(R.id.edit_account).getEditText().toString();
         String password = aq.id(R.id.edit_password).getEditText().toString();
+
+        final ProgressDialog dialog = ProgressDialog.show(this, "", "Loading");
         ServiceManager.getInstance().signUp(aq, account, password, new APIHandler() {
             @Override
             public void onResponseAvailable() {
-                Toast.makeText(SignUpActivity.this, "HHHH", Toast.LENGTH_SHORT).show();
-
+                dialog.dismiss();
             }
 
             @Override
@@ -55,7 +79,6 @@ public class SignUpActivity extends Activity {
             }
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

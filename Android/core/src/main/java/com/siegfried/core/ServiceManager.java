@@ -19,6 +19,8 @@ public class ServiceManager {
     private static final String FK_ACCOUNT = "account";
     private static final String FK_PASSWORD = "password";
 
+
+
     private static ServiceManager _instance;
     public static ServiceManager getInstance() {
         if (_instance == null) {
@@ -41,7 +43,7 @@ public class ServiceManager {
         return true;
     }
 
-    public boolean signin(AQuery aq, String account, String password, APIHandler handler) {
+    public boolean signIn(AQuery aq, String account, String password, APIHandler handler) {
         JSONObject json = new JSONObject();
         try {
             json.put(FK_ACCOUNT, account);

@@ -17,15 +17,15 @@
         <activity
             android:name="com.siegfried.myapplication.LoginActivity"
             android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.siegfried.myapplication.SignUpActivity"
             android:label="@string/title_activity_sign_up" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
