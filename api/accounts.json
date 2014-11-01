@@ -2,10 +2,12 @@ uri:          accounts
 method:       POST
 description:  register a new accounts
 {
-  "acount"    : "jack@siegfried.com",
+  "acount"    : "jobs@siegfried.com",
   "password" : "aefef11wffwxwed",
   "meta" : {
     //some user metadata
-    "name" : "jack"
+    "name" : "jack",
+    "email" : "jobs@siegfried.com",
+    "birthday" : "2/24/1955"
   }
 }
