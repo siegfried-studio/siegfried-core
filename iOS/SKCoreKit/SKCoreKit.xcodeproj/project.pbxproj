@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C12348ED1A04DD3F00435306 /* SKCoreKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C12348EC1A04DD3F00435306 /* SKCoreKit.h */; };
 		C12348EF1A04DD3F00435306 /* SKCoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C12348EE1A04DD3F00435306 /* SKCoreKit.m */; };
+		C12349021A04DDDF00435306 /* SKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C12349011A04DDDF00435306 /* SKServiceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		C12348EE1A04DD3F00435306 /* SKCoreKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKCoreKit.m; sourceTree = "<group>"; };
 		C12348F41A04DD3F00435306 /* SKCoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKCoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12348F71A04DD3F00435306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12349001A04DDDF00435306 /* SKServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKServiceManager.h; sourceTree = "<group>"; };
+		C12349011A04DDDF00435306 /* SKServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKServiceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 			children = (
 				C12348EC1A04DD3F00435306 /* SKCoreKit.h */,
 				C12348EE1A04DD3F00435306 /* SKCoreKit.m */,
+				C12349001A04DDDF00435306 /* SKServiceManager.h */,
+				C12349011A04DDDF00435306 /* SKServiceManager.m */,
 			);
 			path = SKCoreKit;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 		C12348E11A04DD3F00435306 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SK;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "chao-chih lin";
 				TargetAttributes = {
@@ -181,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12348EF1A04DD3F00435306 /* SKCoreKit.m in Sources */,
+				C12349021A04DDDF00435306 /* SKServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
