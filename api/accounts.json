@@ -1,4 +1,4 @@
-uri:          accounts
+uri:          /accounts/signup
 method:       POST
 description:  register a new accounts
 {
