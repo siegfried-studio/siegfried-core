@@ -11,3 +11,12 @@ description:  register a new accounts
     "birthday" : "2/24/1955"
   }
 }
+
+
+uri:          /accounts/signin
+method:       POST
+description:  signin with an exist account.
+{
+  "acount"    : "jobs@siegfried.com",
+  "password" : "aefef11wffwxwed",
+}
