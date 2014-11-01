@@ -5,7 +5,7 @@ description:  register a new accounts
   "name" : "jack",
   "email"    : "jack@siegfried.com",
   "password" : "aefef11wffwxwed",
-  "meta" :{
-    
+  "meta" : {
+    //some user metadata
   }
 }
