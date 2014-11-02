@@ -6,18 +6,19 @@
 //  Copyright (c) 2014 chao-chih lin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AFHTTPSessionManager.h"
 
-@interface SKServiceManager : NSObject
+@interface SKServiceManager : AFHTTPSessionManager
 + (instancetype)sharedInstance;
 
-- (void)signup:(NSString*)account
+- (void)signUp:(NSString*)account
       password:(NSString*)password
+          meta:(NSDictionary*)meta
     completion:(void(^)())completion
        success:(void(^)())success
        failure:(void(^)(NSError* error))failure;
 
-- (void)signin:(NSString*)account
+- (void)signIn:(NSString*)account
       password:(NSString*)password
     completion:(void(^)())completion
        success:(void(^)())success
